@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+
+  #primero-container{
+       height: 100vh;
+       border: solid;
+       border-color: aqua;
+  }
+
+  .cabecario-slide-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #pai-primeiro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid;
+    border-color: blueviolet;
+  }
+
+  .conteudo-scratch p {
+    width: 50%;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    
+  }
