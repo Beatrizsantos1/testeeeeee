@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
     <title>Document</title>
-</head>
-<body>
-    <section>
-        <div>
-            <div class="novo-cadastro">
-               <h2>Bem Vindo</h2>
-               <p><b>Novo Login</b></p>
-               <a href=""><button>Criar Conta</button></a>
-               <!-- falta icone das redes sociais FACEBOOK e GMAIL -->
-            </div>
-            
-            <div class="faca-login">
-                <form action=" " autocomplete="on">
-                    <label for="campo-email">Email</label>
-                    <input id="campo-email" type="email" placeholder="Digite Seu Email:" autocomplete="email" required maxlength="30">
-                    <br><br>
-
-                    <label for="campo-senha">Senha:</label>
-                    <input id="campo-senha" type="password" placeholder="Digite a Senha" autocomplete="current-password" required minlength="5" max="10">
-                    <br><br>
-
-                    <input type="submit" value="Entrar">
-
-                </form>
-
-            </div>
+  </head>
+  <body>
+    <section id="principal-cadastro">
+      <div class="conteudo-login">
+        <div class="novo-cadastro">
+          <h2>BEM VINDO</h2>
+          <p><b>Novo Login</b></p>
+          <a href=""><button>Criar Conta</button></a>
+          <!-- falta icone das redes sociais FACEBOOK e GMAIL -->
         </div>
+
+        <div class="login">
+          <h2>LOGIN</h2>
+          <p>Faça Login Para Continuar</p>
+          <form action=" " autocomplete="on">
+            <label for="campo-email">Email</label>
+            <input
+              id="campo-email"
+              type="email"
+              placeholder="Digite Seu Email:"
+              autocomplete="email"
+              required
+              maxlength="30"
+            />
+            <br /><br />
+
+            <label for="campo-senha">Senha:</label>
+            <input
+              id="campo-senha"
+              type="password"
+              placeholder="Digite a Senha"
+              autocomplete="current-password"
+              required
+              minlength="5"
+              max="10"
+            />
+            <br /><br />
+
+            <input type="submit" value="Entrar" />
+          </form>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

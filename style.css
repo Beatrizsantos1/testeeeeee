@@ -2,18 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
-.conteiner{
-max-width: 1800px;
-margin: 0 auto;
+.conteiner {
+  max-width: 1800px;
+  margin: 0 auto;
 }
 /* estilo da pagina principal */
-#pagina-principal{
-width: 100%;
-height: 100vh;
-
+#pagina-principal {
+  width: 100%;
+  height: 100vh;
 }
 
 /* estilo da height que compoe o menu todo */
@@ -27,12 +25,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 /* inicio da estilização do menu */
 
-#menu_fixo{
+#menu_fixo {
   background-color: white;
   width: 100%;
   height: 6vh;
@@ -43,24 +40,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
 #menu {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
-.barra-pesquisa{
+.barra-pesquisa {
   border: solid 3px;
-  border-color:black;
+  border-color: black;
   width: 461px;
-  
 }
 
-#texto-barra-pesquisa{
+#texto-barra-pesquisa {
   width: 410px;
   height: 35px;
   border: none;
@@ -70,34 +64,31 @@ header {
   padding-left: 15px;
 }
 
-.texto-acessar-conta{
+.texto-acessar-conta {
   padding-right: 5px;
-  height: 90px;    
+  height: 90px;
 }
 
-.fonte-acessar-conta{
+.fonte-acessar-conta {
   font-size: 24px;
 }
 
-.fa-2xl{
+.fa-2xl {
   font-size: 2.5em;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-hr{
-    border: solid 2px;
-    border-color:#ECB44C;
-    margin-top: 5px;
-    
+hr {
+  border: solid 2px;
+  border-color: #ecb44c;
+  margin-top: 5px;
 }
 
-
-
-#menu_nome ul{
+#menu_nome ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,39 +96,38 @@ hr{
   list-style: none;
   width: 100%;
   cursor: pointer;
-  
-   
 }
 
-#menu_nome ul li a{
-   text-decoration: none;
-   font-size: 16px; 
-   font-family: "Nunito", sans-serif;
-   font-weight:400;
-   
+#menu_nome ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 
-#menu_nome ul li a:hover{
+#menu_nome ul li a:hover {
   color: aqua;
-  
+  text-transform: capitalize;
+  border-bottom: solid 1px;
+  font-size: larger;
 }
 /* fim do estilo do menu */
 
 /* Conteudo da pagina principal */
-#principal-parte-dois{
+#principal-parte-dois {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #ECB44C;
-  
+  background-color: #ecb44c;
 }
-#principal-parte-dois img{
+#principal-parte-dois img {
   width: 50%;
   height: 70%;
   margin-bottom: 4%;
 }
-h1{
+h1 {
   width: 50%;
   font-size: 400%;
   color: white;
@@ -146,52 +136,45 @@ h1{
 /* fim Conteudo da pagina principal */
 
 /* Inicio da segunda Pagina*/
-#segunda-pagina{
-width: 100%;
-height: 100vh;
-background-color: #3F41FD;
-color: white;
-
+#segunda-pagina {
+  width: 100%;
+  height: 100vh;
+  background-color: #3f41fd;
+  color: white;
 }
 
-#TDAH-TITULO{
+#tdah-titulo {
   padding-top: 7vh;
   margin-bottom: 5%;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 35px;
- }
+}
 
-
-.tdah-conteudo{
+.tdah-conteudo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  
-  
-
 }
 
-.boi{
+.podcast {
   position: relative;
   width: 100%;
   padding-bottom: 29.25%;
-  
 }
 
-.boi iframe{
+.podcast iframe {
   position: absolute;
   width: 100%;
   height: 80%;
   left: 26%;
   top: 11%;
   border: none;
-  
 }
 
-.tdah-conteudo p{
+.tdah-conteudo p {
   width: 50%;
   margin-left: 282px;
   margin-right: 45px;
@@ -203,7 +186,7 @@ color: white;
 /* Fim da Segunda Pagina*/
 
 /* Inicio da Terceira Pagina*/
-#terceira-pagina{
+#terceira-pagina {
   width: 100%;
   height: 100vh;
   background-color: rgb(236, 180, 76);
@@ -212,7 +195,7 @@ color: white;
   align-items: center;
 }
 
-#terceira-pagina-interno{
+#terceira-pagina-interno {
   width: 100%;
   height: 75vh;
   background-color: white;
@@ -222,7 +205,7 @@ color: white;
   align-items: center;
 }
 
-.dicas{
+.dicas {
   display: grid;
   grid-template-columns: 4% 82%;
   justify-content: space-around;
@@ -231,76 +214,66 @@ color: white;
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 28px;
-
 }
 
-#titulo-dica{
- color: white;
- padding-top: 7vh;
- font-family: "Nunito", sans-serif;
- font-weight: 400;
- font-size: 35px;
+#titulo-dica {
+  color: white;
+  padding-top: 7vh;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
 }
 /* Fim da Terceira Pagina*/
 
 /* Inicio da Quarta Pagina*/
-#quarta-pagina{
+#quarta-pagina {
   width: 100%;
   height: 100vh;
-  background-color:#3F41FD;
+  background-color: #3f41fd;
   color: white;
   display: grid;
   justify-content: center;
   align-items: center;
-  
 }
 
-#app-principal{
+#app-principal {
   width: 700x;
   height: 50vh;
   display: grid;
   grid-template-columns: 25% 25% 25%;
   justify-content: space-around;
   align-items: center;
-  
-  
-  
-  
 }
 
-.app{
+.app {
   background-color: black;
   height: 43vh;
   width: 92%;
   padding-left: 34px;
   padding-right: 34px;
   border-radius: 50px;
-  display:grid;
+  display: grid;
   align-items: center;
   justify-content: center;
-  
-  
-}
-   
-.app h4{
-  
-  color: #ECB44C;
 }
 
-.app img{
+.app h4 {
+  color: #ecb44c;
+}
+
+.app img {
   padding-top: 40px;
 }
 
-.app p{
+.app p {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
-.foto-focus img{
+.foto-focus img {
   width: 60px;
   height: 95px;
-  
 }
 
 /*.app a{
@@ -308,7 +281,7 @@ color: white;
   height: 35px;
 } */
 
-#aplicativo{
+#aplicativo {
   padding-top: 7vh;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -316,26 +289,24 @@ color: white;
   text-align: center;
 }
 
-.app-paragrafo{
+.app-paragrafo {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 29px;
   text-align: center;
-} 
+}
 
 /* Fim da Quarta Pagina*/
 
-
-#quinta-pagina{
+#quinta-pagina {
   height: 100vh;
   width: 100%;
-  
-  background-color: #ECB44C;
+
+  background-color: #ecb44c;
   color: white;
-  
 }
 
-#titulo-aprendizado{
+#titulo-aprendizado {
   padding-top: 7vh;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -343,75 +314,55 @@ color: white;
   text-align: center;
 }
 
-.gif-otaku img{
+.gif-otaku img {
   width: 600px;
   height: 70vh;
   margin-left: 10px;
-
 }
 
-.conteudo-pagina-aprendizado{
+.conteudo-pagina-aprendizado {
   width: 100%;
   height: 80vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-   
- 
 
   text-align: center;
-
- 
-  
 }
 
-.botoes-pagina-apendizado{
+.botoes-pagina-apendizado {
   width: 50%;
-  display:inline-block;
-
- 
-     
+  display: inline-block;
 }
 
-.botoes-pagina-apendizado p{
+.botoes-pagina-apendizado p {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 50px;
   text-align: center;
   padding-bottom: 90px;
-
- 
 }
 
-.botoes-pagina-apendizado button{
-      border: 1px solid black;
-      background-color: white;
-      width: 180px;
-      height: 70px;
-      border-radius: 50px;
+.botoes-pagina-apendizado button {
+  border: 1px solid black;
+  background-color: white;
+  width: 180px;
+  height: 70px;
+  border-radius: 50px;
 
-      font-family: "Nunito", sans-serif;
-      font-weight: 800;
-      font-size: 25px;
-      text-align: center;
-      color: black;
-      cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
 
-      margin: 0 15px;
-  }
+  margin: 0 15px;
+}
 
-  .botoes-pagina-apendizado button:hover{
-    background: linear-gradient(#3F41FD 70%, #ECB44C );
-    border: solid white;
-    color: white;
-
-
-  }
- 	
-  
-
-
-
-
-
+.botoes-pagina-apendizado button:hover {
+  background: linear-gradient(#3f41fd 70%, #ecb44c);
+  border: solid white;
+  color: white;
+}
