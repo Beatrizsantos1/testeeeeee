@@ -3,15 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f47e48370b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="login.css" />
     <title>Document</title>
   </head>
   <body>
     <section id="principal-cadastro">
+      <header>
+        <a href="index.html"
+          ><img
+            src="./img/icons8-excluir-60.png"
+            alt=" icone para fehar a pagina"
+        /></a>
+        <a href="#"
+          ><img
+            src="./img/logoAdobe-removebg-preview.png"
+            alt="imagem da logo da pagina que contem: no inicio a palavra tdah, no meio um astronauta deitado na lua e no final a palavra programação"
+        /></a>
+      </header>
       <div class="conteudo-login">
         <div class="novo-cadastro">
-          <h2>BEM VINDO</h2>
-          <p><b>Novo Login</b></p>
+          <p>BEM VINDO</p>
+          <h2><span>Novo</span> Login</h2>
           <a href=""><button>Criar Conta</button></a>
           <!-- falta icone das redes sociais FACEBOOK e GMAIL -->
         </div>
@@ -20,8 +48,9 @@
           <h2>LOGIN</h2>
           <p>Faça Login Para Continuar</p>
           <form action=" " autocomplete="on">
-            <label for="campo-email">Email</label>
+            <label class="text" for="campo-email">Email:</label> <br />
             <input
+              class="campo"
               id="campo-email"
               type="email"
               placeholder="Digite Seu Email:"
@@ -31,8 +60,9 @@
             />
             <br /><br />
 
-            <label for="campo-senha">Senha:</label>
+            <label class="text" for="campo-senha">Senha:</label> <br />
             <input
+              class="campo"
               id="campo-senha"
               type="password"
               placeholder="Digite a Senha"
@@ -43,7 +73,15 @@
             />
             <br /><br />
 
-            <input type="submit" value="Entrar" />
+            <label for="campo-lembrar">Lembrar</label>
+            <input id="campo-lembrar" type="checkbox" />
+
+            <a href="#">Esqueceu a Senha?</a>
+
+            <br />
+            <br />
+
+            <input class="entrar" type="submit" value="Entrar" />
           </form>
         </div>
       </div>
