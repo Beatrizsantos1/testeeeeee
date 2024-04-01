@@ -23,68 +23,74 @@
     <title>Document</title>
   </head>
   <body>
-    <section id="principal-cadastro">
-      <header>
-        <a href="index.html"
-          ><img
-            src="./img/icons8-excluir-60.png"
-            alt=" icone para fehar a pagina"
-        /></a>
-        <a href="#"
-          ><img
-            src="./img/logoAdobe-removebg-preview.png"
-            alt="imagem da logo da pagina que contem: no inicio a palavra tdah, no meio um astronauta deitado na lua e no final a palavra programação"
-        /></a>
-      </header>
-      <div class="conteudo-login">
-        <div class="novo-cadastro">
-          <p>BEM VINDO</p>
-          <h2><span>Novo</span> Login</h2>
-          <a href=""><button>Criar Conta</button></a>
-          <!-- falta icone das redes sociais FACEBOOK e GMAIL -->
+    <div class="conteiner">
+      <section id="principal-cadastro">
+        <header>
+          <a href="index.html"
+            ><img
+              src="./img/icons8-excluir-60.png"
+              alt=" icone para fehar a pagina"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img/logoAdobe-removebg-preview.png"
+              alt="imagem da logo da pagina que contem: no inicio a palavra tdah, no meio um astronauta deitado na lua e no final a palavra programação"
+          /></a>
+        </header>
+        <div class="conteudo-login">
+          <div class="novo-cadastro">
+            <p>BEM VINDO</p>
+            <h2><span>Novo</span> Login</h2>
+
+            <div class="botao-criar-conta">
+              <a href=""><button>Criar Conta</button></a>
+            </div>
+
+            <!-- falta icone das redes sociais FACEBOOK e GMAIL -->
+          </div>
+
+          <div class="login">
+            <h2>LOGIN</h2>
+            <p>Faça Login Para Continuar</p>
+            <form action=" " autocomplete="on">
+              <label class="text" for="campo-email">Email:</label> <br />
+              <input
+                class="campo"
+                id="campo-email"
+                type="email"
+                placeholder="Digite Seu Email:"
+                autocomplete="email"
+                required
+                maxlength="30"
+              />
+              <br /><br />
+
+              <label class="text" for="campo-senha">Senha:</label> <br />
+              <input
+                class="campo"
+                id="campo-senha"
+                type="password"
+                placeholder="Digite a Senha"
+                autocomplete="current-password"
+                required
+                minlength="5"
+                max="10"
+              />
+              <br /><br />
+
+              <label for="campo-lembrar">Lembrar</label>
+              <input id="campo-lembrar" type="checkbox" />
+
+              <a href="#">Esqueceu a Senha?</a>
+
+              <br />
+              <br />
+
+              <input class="entrar" type="submit" value="Entrar" />
+            </form>
+          </div>
         </div>
-
-        <div class="login">
-          <h2>LOGIN</h2>
-          <p>Faça Login Para Continuar</p>
-          <form action=" " autocomplete="on">
-            <label class="text" for="campo-email">Email:</label> <br />
-            <input
-              class="campo"
-              id="campo-email"
-              type="email"
-              placeholder="Digite Seu Email:"
-              autocomplete="email"
-              required
-              maxlength="30"
-            />
-            <br /><br />
-
-            <label class="text" for="campo-senha">Senha:</label> <br />
-            <input
-              class="campo"
-              id="campo-senha"
-              type="password"
-              placeholder="Digite a Senha"
-              autocomplete="current-password"
-              required
-              minlength="5"
-              max="10"
-            />
-            <br /><br />
-
-            <label for="campo-lembrar">Lembrar</label>
-            <input id="campo-lembrar" type="checkbox" />
-
-            <a href="#">Esqueceu a Senha?</a>
-
-            <br />
-            <br />
-
-            <input class="entrar" type="submit" value="Entrar" />
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
