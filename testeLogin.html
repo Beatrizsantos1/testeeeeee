@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f47e48370b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./testeLogin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <section id="principal-cadastro">
+        <header>
+          <a href="#"
+            ><img
+              src="./img/logoAdobe-removebg-preview.png"
+              alt="imagem da logo da pagina que contem: no inicio a palavra tdah, no meio um astronauta deitado na lua e no final a palavra programação"
+          /></a>
+
+          <div class="botao-de-navegacao">
+            <button id="loginBtn">Entrar</button>
+            <button id="registerBtn">Cadastrar</button>
+          </div>
+
+          <a href="index.html"
+            ><img
+              src="./img/icons8-excluir-60.png"
+              alt=" icone para fehar a pagina"
+          /></a>
+        </header>
+        <!----------------------------- Caixa de formulário ------------------------------------>
+        <div class="conteudo-login">
+          <!------------------- formulário de login -------------------------->
+          <div class="login" id="login-container">
+            <h2>LOGIN</h2>
+            <p>Faça Login Para Continuar</p>
+            <form action=" " autocomplete="on">
+              <label class="text" for="campo-email">Email:</label> <br />
+              <input
+                class="campo"
+                id="campo-email"
+                type="email"
+                placeholder="Digite Seu Email:"
+                autocomplete="email"
+                required
+                maxlength="30"
+              />
+              <br /><br />
+
+              <label class="text" for="campo-senha">Senha:</label> <br />
+              <input
+                class="campo"
+                id="campo-senha"
+                type="password"
+                placeholder="Digite a Senha"
+                autocomplete="current-password"
+                required
+                minlength="5"
+                max="10"
+              />
+              <br /><br />
+
+              <label for="campo-lembrar">Lembrar</label>
+              <input id="campo-lembrar" type="checkbox" />
+
+              <a href="#">Esqueceu a Senha?</a>
+
+              <br />
+              <br />
+
+              <input class="entrar" type="submit" value="Entrar" />
+            </form>
+          </div>
+          <!------------------- Fim formulário de login -------------------------->
+
+          <!------------------- formulário de inscrição -------------------------->
+          <div class="cadastrar" id="cadastrar-container">
+            <h2>CADASTRO</h2>
+            <p>Faça Cadastro Para Continuar</p>
+            <form action=" " autocomplete="on">
+              <label class="text" for="campo-nome">Nome:</label> <br />
+              <input
+                class="campo"
+                id="campo-nome"
+                type="text"
+                placeholder="Digite Seu Nome:"
+                autocomplete="email"
+                required
+                maxlength="100"
+              />
+              <br /><br />
+              <label class="text" for="campo-email">Email:</label> <br />
+              <input
+                class="campo"
+                id="campo-email"
+                type="email"
+                placeholder="Digite Seu Email:"
+                autocomplete="email"
+                required
+                maxlength="30"
+              />
+              <br /><br />
+
+              <label class="text" for="campo-senha">Senha:</label> <br />
+              <input
+                class="campo"
+                id="campo-senha"
+                type="password"
+                placeholder="Digite a Senha"
+                autocomplete="current-password"
+                required
+                minlength="5"
+                max="10"
+              />
+              <br /><br />
+
+              <!-------------------  <label for="campo-lembrar"
+                >Eu concordo com os termos e condições</label
+              > 
+              <input id="campo-lembrar" type="checkbox" />
+
+              <br />-------------------------->
+              <br />
+
+              <input class="entrar" type="submit" value="Registrar" />
+            </form>
+          </div>
+          <!------------------- Fim formulário de inscrição -------------------------->
+        </div>
+        <!----------------------------- Fim Caixa de formulário ------------------------------------>
+      </section>
+    </div>
+    <script src="./testeLogin.js"></script>
+  </body>
+</html>

@@ -107,7 +107,7 @@ hr {
 }
 
 #menu_nome ul li a:hover {
-  color: aqua;
+  color: #3f41fd;
   text-transform: capitalize;
   border-bottom: solid 1px;
   font-size: larger;
