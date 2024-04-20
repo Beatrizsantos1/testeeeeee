@@ -8,6 +8,36 @@
   max-width: 1800px;
   margin: 0 auto;
 }
+
+/* inicio dark */
+input[type="checkbox"] {
+  display: none;
+}
+
+.dark,
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+
+.bi {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.bi-moon {
+  display: none;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+.dark .bi-moon {
+  display: block;
+}
+
+/* fim dark */
+
 /* estilo da pagina principal */
 #pagina-principal {
   width: 100%;
@@ -365,4 +395,28 @@ h1 {
   background: linear-gradient(#3f41fd 70%, #ecb44c);
   border: solid white;
   color: white;
+}
+
+/* continuação  dark mexer na 1 tela e na tela da 3 pagina */
+.dark #quinta-pagina,
+.dark #quarta-pagina,
+.dark #terceira-pagina,
+.dark #segunda-pagina,
+.dark #principal-parte-dois {
+  background-color: #263238;
+  color: #fff;
+}
+.dark #terceira-pagina-interno {
+  background-color: #263238;
+  color: #fff;
+  border: solid #fff;
+}
+/* Fim da continuação  dark mexer na 1 tela e na tela da 3 pagina */
+
+/*<------------ AJEITAR ESSA PARTE NÃO ESTA FUNCINADO zomm nos icones<---------------*/
+.fullsize-icons,
+.fullsize-icons #terceira-pagina {
+  cursor: zoom-out;
+  max-width: 400px;
+  height: 550px;
 }
