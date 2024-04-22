@@ -19,3 +19,4 @@ zoom.addEventListener("change", function () {
 });
 
 /*<------------ Fim zomm nos icones<---------------*/
+AOS.init();
