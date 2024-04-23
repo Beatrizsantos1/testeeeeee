@@ -1,72 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/f47e48370b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="praticar.css">
-    <title>Praticar</title>
-</head>
-<body>
-  <script>
-    alert("Site em Manutenção!")
-  </script>
-  
-    <section id="primero-container">
-
-      <div class="slides">
-        <!-- Fim Radio button -->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-         <!-- Fim Radio button -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/Banner scratch.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/Banner curso em video.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
       </div>
-        
-      <div  class="cabecario-slide-conteudo"> 
-        <!-- Inicio do 1 Slide Conteudo -->
-        <i class="fa-solid fa-xmark fa-2xl"></i>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-        <h2>Scratch</h2>
-
-        <i class="fa-solid fa-circle-half-stroke fa-flip-horizontal fa-2xl"></i>
-      </div>
-
-      <section id="pai-primeiro-container" >
-          <div  class="conteudo-scratch">
-            <p>Para praticar programação vamos desfrutar do Scratch.</p>
-            <br>
-            <p>Scratch é uma linguagem de programação criada em 2007 pelo Media Lab do MIT. Desde 2019 o Scratch 3 está disponível on-line e como uma aplicação para Windows, OS X, e Linux.</p>
-            <button>Baixar</button>
-          </div>
-            
-         <div>
-            <img src="./img/scratch.png" alt="">
-         </div> 
-      </section> <!-- Fim Slide do 1 Conteudo -->
-           
-      <div> 
-        <!-- Inicio do 2 Slide Conteudo -->
-        <i class="fa-solid fa-xmark fa-2xl"></i>
-
-        <img src="./img/logo-curso-em-video.png" alt="">
-
-        <i class="fa-solid fa-circle-half-stroke fa-flip-horizontal fa-2xl"></i>
-      </div>
-
-      <section id="pai-primeiro-container" >
-        <div>
-           <p>Curso em vídeo é uma ótima plataforma para aprender a mexer no Scratch e 
-              dominar mais sobre o universo da programação</p>
-            <button>Youtuber</button>
-            <button>Site</button>
-          </div>
-
-         <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GrPkuk1ezyo?si=Yf3gw97ddj-kaUIt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-         </div> 
-      </section>
-     
-    </section>
-
-   
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
