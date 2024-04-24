@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-   
-    <script src="https://kit.fontawesome.com/f47e48370b.js" crossorigin="anonymous"></script>
-   
-    <link rel="stylesheet" href="./teoria.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/f47e48370b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./teoria.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
     <title>Teoria</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <i id="voltar" class="bi bi-x"></i>
 
-   <section id="teoria">
-    <div class="cabecaçho-teoria">
-        <a href="index.html"><img src="./img/icons8-excluir-60.png" alt=" icone para fehar a pagina"></a>
-        <h2>Variaveis</h2>
-        <i class="fa-solid fa-circle-half-stroke fa-flip-horizontal fa-2xl"></i>
-    </div>
+      <h2>Variaveis</h2>
 
-    <div class="conteudo-teoria" >
+      <div>
+        <input type="checkbox" name="Mudar-tema" id="Mudar-tema" />
+        <label for="Mudar-tema">
+          <i class="bi bi-sun"></i>
+          <i class="bi bi-moon"></i>
+        </label>
+      </div>
+    </header>
+
+    <section id="teoria">
+      <div class="conteudo-teoria">
         <p>
-            As variáveis são usadas para salvar e recuperar dados, representar valores existentes e atribuir novos. 
-            <br>
-            <br>
-            Pense que as variáveis fosse um armário e dentro do armário você pode guardar objetos.
+          As variáveis são usadas para salvar e recuperar dados, representar
+          valores existentes e atribuir novos.
+          <br />
+          <br />
+          Pense que as variáveis fosse um armário e dentro do armário você pode
+          guardar objetos.
         </p>
 
-       
-        <img  class="armario" src="./img/armarioo-removebg-preview.png" alt="armario marrom contenod dois objetos, uma bola e outro sapato">
-       
+        <img
+          class="armario"
+          src="./img/armarioo-removebg-preview.png"
+          alt="armario marrom contenod dois objetos, uma bola e outro sapato"
+        />
 
-        <a href="teoria2.html"><img src="./img/icons8-back-arrow- right.png" alt="icone seta para passar para proxima pagina"></a>
-        
-    </div>
-   </section>
-
-
-    
-</body>
+        <i class="bi bi-arrow-right-circle"></i>
+      </div>
+    </section>
+    <script src="./teoria.js"></script>
+  </body>
 </html>

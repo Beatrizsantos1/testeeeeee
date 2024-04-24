@@ -1,50 +1,73 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-  }
-
-  #teoria{
-    width: 100%;
-    height: 100vh;
-    border: solid red;
-  }
-
-  .cabecaçho-teoria{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 5vh;
-   
-    padding-top: 7vh;
-  }
-
-  .conteudo-teoria{
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-  }
-
-  .conteudo-teoria p{
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-    font-size: 2.1rem;
-    text-align: center;
-    width: 40%;
-  }
-
-  .armario{
-    width: 792px;
-    height: 524px;
-  }
-
-  .cabecaçho-teoria h2{
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-  
+
+#teoria {
+  width: 100%;
+  height: 90vh;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.conteudo-teoria {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-teoria p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 2.1rem;
+  text-align: center;
+  width: 40%;
+}
+
+.armario {
+  width: 769px;
+  height: 470px;
+}
+
+/* inicio dark */
+input[type="checkbox"] {
+  display: none;
+}
+.dark,
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+.bi {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.bi-moon {
+  display: none;
+}
+.dark .bi-sun {
+  display: none;
+}
+.dark .bi-moon {
+  display: block;
+}
+.bi-x {
+  font-size: 5rem;
+}
+
+/* fim dark */

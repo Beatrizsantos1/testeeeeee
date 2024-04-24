@@ -1,3 +1,4 @@
+/* botão do slide scratch */
 .botao-scratch {
   width: 65%;
   display: flex;
@@ -29,4 +30,42 @@
   background: #5ce1e6;
   border: solid #000000;
   color: #000000;
+}
+/* fim da estilização botão do slide scratch */
+
+/* botão do slide Curso em Video */
+.btn-cursoVideo {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-slide2,
+.btn-slide3 {
+  border: 1px solid black;
+  background-color: white;
+  width: 180px;
+  height: 70px;
+  border-radius: 50px;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+
+  position: relative;
+  bottom: 90px;
+}
+.btn-slide3 {
+  margin-left: 15px;
+}
+
+.btn-slide2:hover,
+.btn-slide3:hover {
+  background: linear-gradient(#3f41fd 70%, #ecb44c);
+  border: solid white;
+  color: white;
 }
