@@ -33,3 +33,15 @@ btnYoutube.addEventListener("click", function () {
   youtube();
 });
 /* ------------------fim do botão Curso em video do Youtube --------------------*/
+
+/* ------------------inicio do botão voltar a tela anterior --------------------
+const fecharTela = document.getElementById("voltar");
+
+function sair() {
+  window.history.back();
+}
+
+fecharTela.addEventListener("click", function () {
+  sair();
+});
+/* ------------------fim do botão voltar a tela anterior --------------------*/
