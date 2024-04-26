@@ -6,12 +6,12 @@
 
 #teoria {
   width: 100%;
-  height: 90vh;
+  height: 84vh;
 }
 
 header {
   width: 100%;
-  height: 10vh;
+  height: 16vh;
 
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ header h2 {
 }
 
 .conteudo-teoria {
-  height: 90vh;
+  height: 84vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -89,3 +89,15 @@ input[type="checkbox"] {
 }
 
 /* fim dark */
+
+#segundaPagina {
+  border: solid red;
+  height: 70px;
+  z-index: 1;
+}
+
+.terceiraPagina {
+  border: solid blue;
+  height: 70px;
+  z-index: 3;
+}
