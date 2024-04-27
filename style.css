@@ -83,6 +83,22 @@ header {
   border-color: black;
   width: 461px;
 }
+.pesquisa-dentro-site {
+  display: none;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+.pesquisa-dentro-site:hover {
+  background-color: rgb(164, 163, 163);
+  cursor: pointer;
+}
+.item-barra {
+  border: solid black;
+  background-color: rgb(226, 226, 226);
+  position: absolute;
+  width: 461px;
+}
 
 #texto-barra-pesquisa {
   width: 410px;

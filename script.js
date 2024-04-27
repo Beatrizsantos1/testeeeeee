@@ -53,8 +53,13 @@ inputElement.addEventListener("input", (e) => {
     } else {
       li.style.display = "none";
     }
-    if (text == "") {
+    if (inputed == "") {
       li.style.display = "none";
+    }
+    if (e.key === "Enter") {
+      if (inputed) {
+        window.location.href = "quarta-pagina";
+      }
     }
   });
 });
