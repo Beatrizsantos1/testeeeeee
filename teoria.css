@@ -88,16 +88,23 @@ input[type="checkbox"] {
   font-size: 5rem;
 }
 
+.dark #segundaPagina,
+.dark #terceiraPagina {
+  color: #fff;
+}
+
 /* fim dark */
 
 #segundaPagina {
-  border: solid red;
+  border: transparent;
   height: 70px;
   z-index: 1;
+  background-color: transparent;
 }
 
-.terceiraPagina {
-  border: solid blue;
+#terceiraPagina {
+  border: transparent;
   height: 70px;
   z-index: 3;
+  background-color: transparent;
 }

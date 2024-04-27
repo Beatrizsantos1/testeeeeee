@@ -35,3 +35,21 @@ btnsegundaPagina.addEventListener("click", function () {
 function telaseguinte() {
   window.location = "teoria3.html";
 }
+
+function telaanterior() {
+  window.location = "teoria.html";
+}
+function telaantes() {
+  window.location = "teoria2.html";
+}
+
+/* ------------------inicio do botão voltar a tela anterior --------------------*/
+
+function toclose() {
+  window.history.go(-2);
+}
+
+function toclose3() {
+  window.history.go(-3);
+}
+/* ------------------fim do botão voltar a tela anterior --------------------*/

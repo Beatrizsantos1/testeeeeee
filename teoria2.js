@@ -29,6 +29,8 @@ checkbox.addEventListener("change", function () {
 });
 /* ------------------fim do botão dark --------------------*/
 
-function reusmocompra() {
-  window.location = "teoria3.html";
+document.getElementById("pesquisa").addEventListener("blur", myFunction);
+
+function myFunction() {
+  document.getElementById("pesquisa").style.display = "none";
 }

@@ -26,7 +26,7 @@
   </head>
   <body>
     <header class="menu">
-      <i id="voltar" class="bi bi-x"></i>
+      <i onclick="toclose3()" class="bi bi-x"></i>
 
       <h2>Algoritmo x Lógica</h2>
 
@@ -41,7 +41,9 @@
 
     <section id="teoria">
       <div class="conteudo-teoria">
-        <i class="bi bi-arrow-left-circle"></i>
+        <button onclick="telaantes()" id="terceiraPagina">
+          <i class="bi bi-arrow-left-circle"></i>
+        </button>
 
         <p id="opl-paragrafo">
           Algoritmo é um conjunto de instruções, como uma receita,ou seja, os
@@ -64,6 +66,6 @@
         <i class="bi bi-arrow-right-circle"></i>
       </div>
     </section>
-    <script src="./teoria3.js"></script>
+    <script src="./teoria.js"></script>
   </body>
 </html>
