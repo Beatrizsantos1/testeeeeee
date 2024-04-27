@@ -249,6 +249,7 @@ h1 {
   display: grid;
   justify-content: center;
   align-items: center;
+  cursor: cell;
 }
 
 .dicas {
@@ -268,6 +269,12 @@ h1 {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 35px;
+}
+
+#terceira-pagina-interno .azul:hover,
+#terceira-pagina-interno .branco:hover {
+  transform: scale(1.5);
+  transition: all 0.8s ease;
 }
 /* Fim da Terceira Pagina*/
 
@@ -425,7 +432,18 @@ h1 {
 .dark #terceira-pagina-interno {
   background-color: #263238;
   color: #fff;
-  border: solid #3f41fd;
+  border: solid #efeff1;
+}
+.dark #terceira-pagina-interno .branco {
+  color: #fff;
+}
+.dark #terceira-pagina-interno .branco:hover {
+  transform: scale(1.5);
+  transition: all 0.8s ease;
+}
+.dark #terceira-pagina-interno .azul:hover {
+  transform: scale(1.5);
+  transition: all 0.8s ease;
 }
 .dark #titulo-dica {
   color: #3f41fd;
