@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprenda Brincando!</title>
+    <link rel="stylesheet" href="./play.css" />
+
+    <script>
+      // alerta
+      window.onload = function () {
+        alert(
+          "site em Desenvolvimento! Mas você pode aprender HTML, CSS e JavaScript jogando! Escolha os jogos abaixo"
+        );
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Jogos Recomendados para HTML e CSS</h2>
+
+      <div class="flex-container">
+        <div class="button-group">
+          <button
+            onclick="window.open('https://flukeout.github.io/', '_blank')"
+          >
+            🕹️ CSS Dinner
+          </button>
+          <button onclick="window.open('https://flexboxfroggy.com/', '_blank')">
+            🎮 Flexbox Froggy
+          </button>
+          <button onclick="window.open('https://cssbattle.dev/', '_blank')">
+            🛡️ CSSBattle
+          </button>
+          <button onclick="window.open('https://codier.io/', '_blank')">
+            💻 Codier
+          </button>
+        </div>
+
+        <div class="video">
+          <iframe
+            width="360"
+            height="215"
+            src="https://www.youtube.com/embed/SVAtnMRjVgM?si=Ie-btpT_cwY5n46C"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p>O vídeo mostra como usufluir de cada site ao lado.</p>
+        </div>
+      </div>
+
+      <h2>Recomendação para JavaScript</h2>
+      <div class="flex-container">
+        <div class="button-group">
+          <button
+            onclick="window.open('https://www.jschallenger.com/', '_blank')"
+          >
+            🕹️ JS challenger
+          </button>
+        </div>
+
+        <div class="video">
+          <iframe
+            width="360"
+            height="215"
+            src="https://www.youtube.com/embed/fgcudLPqXZU?si=amWUiVI1_NhroSGX"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p>O vídeo mostra como usufluir de cada site ao lado.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
