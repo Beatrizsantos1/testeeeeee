@@ -1,0 +1,106 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #3f41fd;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  background-color: #ecb44c;
+  color: #0f0e0e;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.logout {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 65px;
+}
+
+.content {
+  padding: 20px;
+  height: 100vh; /* Ocupa 100% da altura da viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+h2 {
+  font-size: 3em;
+  color: #ffffff;
+  margin: 37px 0 10px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.cafe {
+  width: 200px; /* Define a largura das imagens */
+  display: none; /* Inicialmente, todas as imagens estão ocultas */
+  cursor: pointer;
+}
+
+/* Estilo para os botões de navegação */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background-color: #cad1d1;
+  color: #141313;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.navigation-buttons button:hover {
+  background-color: #3f41fd;
+  color: #fff;
+  border: solid white;
+  transform: scale(1.05); /* Leve aumento de escala */
+}
+
+.navigation-buttons button:active {
+  transform: scale(1); /* Restaura o tamanho ao clicar */
+}
+
+footer {
+  background-color: #ecb44c;
+  color: #0f0e0e;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.footer-info span {
+  font-size: 18px;
+  font-weight: bold;
+}

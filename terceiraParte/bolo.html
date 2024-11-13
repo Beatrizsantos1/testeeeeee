@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Exibição Sequencial de Imagens</title>
+    <link rel="stylesheet" href="cafe.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" title="logo da pagina">
+        <img src="../img/Image-logo-removebg-preview.png" alt="Logo do Site" />
+      </div>
+      <h1>Curso - Front End</h1>
+      <button class="logout" title="botão sair">Saída</button>
+    </header>
+    <section class="container-principal">
+      <h2>Algoritmo Bolo</h2>
+      <div class="image-container">
+        <img
+          src="./algBolo1.png"
+          class="cafe"
+          alt="Algoritmos bolo"
+          title="Algoritmos bolo"
+        />
+        <img
+          src="./algBolo2.png"
+          class="cafe"
+          alt="Algoritmos bolo"
+          title="Algoritmos bolo"
+        />
+        <img
+          src="./algBolo3.png"
+          class="cafe"
+          alt="Algoritmos bolo"
+          title="Algoritmos bolo"
+        />
+        <img src="./bolo.png" class="cafe" alt="Bolo" title="Bolo" />
+      </div>
+
+      <div class="navigation-buttons">
+        <button
+          onclick="location.href='cafe.html'"
+          title="botão que faz voltar para pagina anterior"
+        >
+          Página Anterior
+        </button>
+        <button
+          onclick="location.href='resumoAlgoritmo.html'"
+          title="botão que faz prosseguir para proxima pagina "
+        >
+          Próxima Página
+        </button>
+      </div>
+    </section>
+    <footer>
+      <p>Programa Competências Transversais</p>
+      <section class="footer-info">
+        <span>Lógica de Programação</span>
+      </section>
+    </footer>
+
+    <script src="cafe.js"></script>
+  </body>
+</html>

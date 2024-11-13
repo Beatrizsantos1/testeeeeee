@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perguntas</title>
+    <link rel="stylesheet" href="perguntas_styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz - Lógica de Programação</h1>
+    </header>
+
+    <main class="quiz-container">
+      <!-- Pergunta 1 -->
+      <section class="question-section active" data-correct="3">
+        <h2>Pergunta 1</h2>
+        <p>
+          Quais são os dois tipos de representações mais utilizados em
+          algoritmos?
+        </p>
+        <form class="options">
+          <label
+            ><input type="radio" name="q1" value="1" /> Fluxograma e
+            programação</label
+          >
+          <label
+            ><input type="radio" name="q1" value="2" /> Organograma e
+            código</label
+          >
+          <label
+            ><input type="radio" name="q1" value="3" /> Fluxograma e
+            pseudocódigo</label
+          >
+          <label
+            ><input type="radio" name="q1" value="4" /> Nenhuma das
+            alternativas</label
+          >
+          <button type="button" onclick="verificarResposta(this)">
+            Verificar Resposta
+          </button>
+        </form>
+      </section>
+
+      <!-- Pergunta 2 -->
+      <section class="question-section" data-correct="1">
+        <h2>Pergunta 2</h2>
+        <p>A lógica de programação é utilizada para:</p>
+        <form class="options">
+          <label
+            ><input type="radio" name="q2" value="1" /> Resolver problemas
+            computacionais</label
+          >
+          <label
+            ><input type="radio" name="q2" value="2" /> Escrever textos</label
+          >
+          <label
+            ><input type="radio" name="q2" value="3" /> Organizar
+            documentos</label
+          >
+          <label
+            ><input type="radio" name="q2" value="4" /> Apenas para
+            design</label
+          >
+          <button type="button" onclick="verificarResposta(this)">
+            Verificar Resposta
+          </button>
+        </form>
+      </section>
+
+      <!-- Pergunta 3 -->
+      <section class="question-section" data-correct="2">
+        <h2>Pergunta 3</h2>
+        <p>Qual é a finalidade do pseudocódigo em algoritmos?</p>
+        <form class="options">
+          <label
+            ><input type="radio" name="q3" value="1" /> Tornar o código mais
+            bonito</label
+          >
+          <label
+            ><input type="radio" name="q3" value="2" /> Facilitar o entendimento
+            do algoritmo</label
+          >
+          <label
+            ><input type="radio" name="q3" value="3" /> Compilar o código</label
+          >
+          <label
+            ><input type="radio" name="q3" value="4" /> Não tem
+            finalidade</label
+          >
+          <button type="button" onclick="verificarResposta(this)">
+            Verificar Resposta
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script src="perguntas_script.js"></script>
+  </body>
+</html>

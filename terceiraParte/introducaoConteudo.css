@@ -1,0 +1,137 @@
+/* Estilos gerais */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #3f41fd;
+  overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+  height: 100%; /* Garante que o body ocupe 100% da altura */
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  background-color: #ecb44c;
+  color: #0f0e0e;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.logout {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 65px;
+}
+
+.content {
+  padding: 20px;
+  height: 100vh; /* Ocupa 100% da altura da viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  color: #fff;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 3em;
+  color: #ffffff;
+  margin: 37px 0 10px;
+}
+
+/* Layout de texto e imagem lado a lado */
+.intro-content {
+  display: flex;
+  align-items: stretch; /* Faz o conteúdo ocupar a altura completa */
+  gap: 20px;
+  height: 100%;
+}
+
+.intro-text,
+.intro-image {
+  flex: 1;
+  max-width: 50%;
+  margin-top: -35;
+}
+
+.intro-text p {
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 17px;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#ft-alg img {
+  width: 100%; /* Ajusta a largura para ocupar todo o espaço do contêiner */
+  height: 430px; /* Mantém a proporção da imagem */
+  margin-right: 10px;
+  object-fit: contain; /* Garante que a imagem seja ajustada ao contêiner sem cortar */
+}
+#ft-funcaoAlg img {
+  width: 100%;
+  height: 320px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+/* Estilo para os botões de navegação */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background-color: #cad1d1;
+  color: #141313;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.navigation-buttons button:hover {
+  background-color: #3f41fd;
+  color: #fff;
+  border: solid white;
+  transform: scale(1.05); /* Leve aumento de escala */
+}
+
+.navigation-buttons button:active {
+  transform: scale(1); /* Restaura o tamanho ao clicar */
+}
+
+footer {
+  background-color: #ecb44c;
+  color: #0f0e0e;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.footer-info span {
+  font-size: 18px;
+  font-weight: bold;
+}
