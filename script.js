@@ -38,7 +38,7 @@ function pesquisar() {
 
 x.addEventListener("keyup", function () {
   pesquisar();
-});*/
+});
 
 let inputElement = document.querySelector("input");
 let listElement = document.querySelector("ul");
@@ -62,4 +62,4 @@ inputElement.addEventListener("input", (e) => {
       }
     }
   });
-});
+});*/

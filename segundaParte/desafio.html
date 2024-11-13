@@ -5,141 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./desafio.css" />
     <title>Desafio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #e9f5ff; /* Cor padrão para tema claro */
-        color: #333;
-        line-height: 1.6;
-        padding: 20px;
-        transition: background-color 0.3s, color 0.3s;
-      }
-      .container {
-        max-width: 800px;
-        margin: auto;
-        background: #fff; /* Cor padrão para tema claro */
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: background 0.3s;
-      }
-      .editor {
-        margin-top: 20px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-        width: 100%;
-        resize: vertical;
-      }
-      .output-box {
-        margin-top: 20px;
-        padding: 20px;
-        background-color: #f0f0f0;
-        border-radius: 5px;
-        transition: background-color 0.3s, color 0.3s;
-      }
-      .tips {
-        margin-top: 20px;
-        background-color: #d0ebff; /* Cor padrão */
-        border-left: 6px solid #2196f3;
-        padding: 10px;
-        border-radius: 5px;
-      }
-      h1,
-      h2,
-      h3 {
-        color: #2c3e50;
-      }
-      /* Estilos para tema escuro */
-      body.dark {
-        background-color: #121212;
-        color: #ffffff;
-      }
-      .container.dark {
-        background: #1e1e1e;
-      }
-
-      .editor.dark {
-        background-color: #2c2c2c;
-        color: #ffffff; /* Texto branco */
-      }
-      .tips.dark {
-        background-color: #333; /* Fundo escuro no modo escuro */
-        color: #ffffff; /* Texto branco no modo escuro */
-        border-left: 6px solid #2196f3; /* Mantém a borda visível */
-      }
-      /* Cores dos títulos no modo escuro */
-      h1.dark,
-      h2.dark,
-      h3.dark,
-      p.dark {
-        color: #ffffff; /* Títulos brancos no modo escuro */
-      }
-      /* Estilo do botão tema claro/escuro */
-      #themeToggle {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 10px 15px;
-        background-color: #2196f3;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-      #themeToggle:hover {
-        background-color: #1976d2;
-      }
-      /* Estilos para textarea no modo escuro */
-      body.dark .editor {
-        background-color: #333; /* Fundo escuro */
-        color: #ffffff; /* Texto branco */
-        border: 1px solid #555; /* Borda mais clara */
-      }
-      /* Estilos para <pre> no modo escuro */
-      body.dark pre {
-        background-color: #333; /* Fundo escuro */
-        color: #ffffff; /* Texto branco */
-      }
-      /* Estilos para tema escuro */
-      body.dark {
-        background-color: #121212;
-        color: #ffffff;
-      }
-
-      .container.dark {
-        background: #1e1e1e;
-      }
-
-      /*Títulos e parágrafos no modo escuro */
-      .dark h1,
-      .dark h2,
-      .dark h3,
-      .dark p {
-        color: #ffffff;
-      }
-
-      body.dark .output-box {
-        background-color: #f0f0f0; /* Mantém a cor do modo claro */
-        color: black; /* Mantém a cor do texto do modo claro */
-      }
-
-      .tips.dark {
-        background-color: #333; /* Fundo escuro no modo escuro */
-        color: #ffffff; /* Texto branco no modo escuro */
-      }
-
-      body.dark pre {
-        background-color: #333; /* Fundo escuro */
-        color: #ffffff; /* Texto branco */
-      }
-      body.dark .output-box {
-        background-color: #444; /* Cor de fundo no modo escuro */
-        color: #ffffff; /* Cor do texto no modo escuro */
-      }
-    </style>
   </head>
   <body>
     <button id="themeToggle">Ativar Tema Escuro</button>
@@ -201,14 +66,7 @@ body {
             Você pode usar seletores para aplicar estilos específicos:
             <ul>
               <li><code>body</code>: para mudar o fundo da página inteira.</li>
-              <li>
-                <code>.output-box</code>: para alterar a caixa inteira (Tema:
-                claro).
-              </li>
-              <li>
-                <code>body.dark .output-box</code>: para alterar a caixa inteira
-                (Tema: Escuro).
-              </li>
+              <li><code>.output-box</code>: para alterar a caixa inteira.</li>
               <li><code>#outputTitle</code>: para mudar apenas o título.</li>
               <li>
                 <code>#outputParagraph</code>: para mudar apenas o parágrafo.
@@ -221,56 +79,6 @@ body {
       <a href="index.html" class="back-button">Voltar para o início</a>
     </div>
 
-    <script>
-      // Verifica se o tema escuro está salvo e aplica
-      if (localStorage.getItem("darkTheme") === "enabled") {
-        document.body.classList.add("dark");
-        document.querySelector(".container").classList.add("dark");
-        document.getElementById("themeToggle").textContent =
-          "Ativar Tema Claro";
-      }
-
-      document
-        .getElementById("themeToggle")
-        .addEventListener("click", function () {
-          const body = document.body;
-          const container = document.querySelector(".container");
-          //const outputBox = document.querySelector(".output-box");
-          const tips = document.querySelector(".tips");
-          const editor = document.querySelector(".editor");
-          const preCode = document.querySelector("pre");
-
-          // Alterna a classe dark para os elementos
-          body.classList.toggle("dark");
-          container.classList.toggle("dark");
-          //outputBox.classList.toggle("dark");
-          tips.classList.toggle("dark");
-          editor.classList.toggle("dark"); // Para a textarea
-          preCode.classList.toggle("dark"); // Para o <pre>
-
-          // Atualiza o texto do botão e armazena a preferência do usuário
-          if (body.classList.contains("dark")) {
-            localStorage.setItem("darkTheme", "enabled");
-            this.textContent = "Ativar Tema Claro";
-          } else {
-            localStorage.removeItem("darkTheme");
-            this.textContent = "Ativar Tema Escuro";
-          }
-        });
-
-      const cssInput = document.getElementById("cssInput");
-      const outputBox = document.getElementById("outputBox");
-
-      // Adiciona evento para aplicar o CSS ao outputBox
-      cssInput.addEventListener("input", function () {
-        const styleTag = document.createElement("style");
-        styleTag.type = "text/css";
-        styleTag.innerHTML = cssInput.value;
-        document.head.appendChild(styleTag);
-
-        // Atualiza a exibição do CSS atual
-        document.getElementById("currentCss").textContent = cssInput.value;
-      });
-    </script>
+    <script src="./desafio.js"></script>
   </body>
 </html>

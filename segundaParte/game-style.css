@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/*classe que não vai desconfigurar o site*/
+.geral {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;*/
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 98px;
+  gap: 20px;
+  /* max-width: 1200px; */
+  height: 100vh;
+}
+
+.text-section {
+  flex: 1;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #cccccc;
+}
+
+.cta-button {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #333333;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #555555;
+}
+
+.images {
+  display: grid;
+  grid-template-areas:
+    "top-left ."
+    ". middle-right"
+    "bottom-left .";
+  gap: 20px;
+  flex: 1;
+  width: 100%;
+  margin-top: 68px;
+  /* height: 332px;  Definindo a altura da div */
+}
+
+.image {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ajusta a imagem sem distorção */
+}
+
+.middle-right {
+  margin-top: 50px;
+}
+main {
+  height: auto;
+}
+
+/* Estilos do primeiro video */
+.txt-video {
+  font-size: 2.3em;
+  font-weight: bold;
+  width: 70%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.container-video {
+  display: flex;
+  justify-content: space-around;
+  width: 66%;
+  align-items: center;
+}
+
+.container-video p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para os botões de jogos */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden; /* Evita barra de rolagem vertical indesejada */
+}
+
+.btn-jogos {
+  height: 170px;
+  width: 200px;
+  background-color: #ff6f61;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  white-space: nowrap;
+  transform-origin: center; /* Centraliza o ponto de escala */
+}
+
+.btn-jogos.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-jogos:hover {
+  background-color: #ff856d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mover {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.mover.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  max-width: 100%;
+}

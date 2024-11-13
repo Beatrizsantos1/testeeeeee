@@ -17,6 +17,20 @@ input[type="checkbox"] {
 .dark,
 .dark header {
   background-color: #263238;
+  color: #000;
+}
+
+.dark #menu_nome {
+  color: #ffffff; /* ou qualquer outra cor clara visível */
+  z-index: 10;
+}
+.dark #menu_nome ul li a {
+  color: #f6f2f2; /* Cor de texto clara para o modo escuro */
+  z-index: 10;
+}
+
+.dark #menu_fixo {
+  background-color: #000;
   color: #fff;
 }
 
